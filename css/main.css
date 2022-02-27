@@ -1,0 +1,155 @@
+:root {
+  --main-color: $main-color;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+.game .name {
+  background-color: #2196f3;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.game .container {
+  margin: auto;
+  max-width: 900px;
+}
+
+.game .container .message {
+  background-color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+}
+
+.game .container .message span {
+  font-weight: bold;
+  color: #009688;
+}
+
+.game .container .message span::before {
+  content: "[ ";
+}
+
+.game .container .message span::after {
+  content: " ]";
+}
+
+.game .container .start {
+  width: 100%;
+  background-color: #009688;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.game .container .the-word {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: #2196f3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.game .container input {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 15px;
+  border: 3px solid #2196f3;
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: #2196f3;
+}
+
+.game .container input:focus {
+  outline: none;
+}
+
+.game .container .upcoming-words {
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.game .container .upcoming-words div {
+  background-color: #2196f3;
+  color: #fff;
+  font-weight: bold;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.game .container .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.game .container .control .time span {
+  font-weight: bold;
+  color: #009688;
+}
+
+.game .container .control .score span {
+  font-weight: bold;
+  color: #009688;
+}
+
+.game .container .finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+
+.game .container .finish .good {
+  color: #2196f3;
+}
+
+.game .container .finish .bad {
+  color: #ff0000;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
